@@ -16,14 +16,14 @@ struct ComputationView: View {
             HStack {
                 Spacer()
                 Text(currentComputation)
-                    .foregroundStyle(forgroundDigitsColor)
+                    .foregroundStyle(foregroundDigitsColor)
                 .lineLimit(1)
             }
             .minimumScaleFactor(0.1)
             HStack {
                 Spacer()
                 Text(mainResult)
-                    .foregroundStyle(forgroundDigitsColor)
+                    .foregroundStyle(foregroundDigitsColor)
                     .font(.largeTitle)
                     .fontWeight(.bold
                     )
