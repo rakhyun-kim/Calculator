@@ -30,7 +30,7 @@ enum CalcButton: String {
     case clear = "AC"
     case decimal = "."
     case percent = "%"
-    case negative = "IMGplus.frwardslash.minus"
+    case negative = "IMGplus.forwardslash.minus"
     case undo = "IMGarrow.counterclockwise"
 }
 
