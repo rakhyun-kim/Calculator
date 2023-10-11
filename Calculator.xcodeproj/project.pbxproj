@@ -15,6 +15,7 @@
 		504E78A72AD6FBE900B3AF49 /* SunMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E78A62AD6FBE900B3AF49 /* SunMoonView.swift */; };
 		504E78A92AD6FEA600B3AF49 /* ComputationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E78A82AD6FEA600B3AF49 /* ComputationView.swift */; };
 		504E78AB2AD703E600B3AF49 /* CalcsButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E78AA2AD703E600B3AF49 /* CalcsButtonsView.swift */; };
+		504E78AD2AD7234900B3AF49 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E78AC2AD7234900B3AF49 /* Enumerations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		504E78A62AD6FBE900B3AF49 /* SunMoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunMoonView.swift; sourceTree = "<group>"; };
 		504E78A82AD6FEA600B3AF49 /* ComputationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationView.swift; sourceTree = "<group>"; };
 		504E78AA2AD703E600B3AF49 /* CalcsButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcsButtonsView.swift; sourceTree = "<group>"; };
+		504E78AC2AD7234900B3AF49 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				504E78962AD62A0F00B3AF49 /* CalculatorApp.swift */,
 				504E78982AD62A0F00B3AF49 /* MainCalculatorView.swift */,
+				504E78AC2AD7234900B3AF49 /* Enumerations.swift */,
 				504E78A82AD6FEA600B3AF49 /* ComputationView.swift */,
 				504E78AA2AD703E600B3AF49 /* CalcsButtonsView.swift */,
 				504E78A62AD6FBE900B3AF49 /* SunMoonView.swift */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504E78AD2AD7234900B3AF49 /* Enumerations.swift in Sources */,
 				504E78992AD62A0F00B3AF49 /* MainCalculatorView.swift in Sources */,
 				504E78A52AD6F95500B3AF49 /* ColorConstants.swift in Sources */,
 				504E78A92AD6FEA600B3AF49 /* ComputationView.swift in Sources */,
