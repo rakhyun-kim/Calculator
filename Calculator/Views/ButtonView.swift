@@ -30,8 +30,8 @@ struct ButtonView: View {
             Text(text ?? "")
             Image(systemName: systemImage ?? "")
         }
-        .font(.title2)
-        .fontWeight(.semibold)
+        .font(UIDevice.isIPAD ? .largeTitle : .title2)
+        .fontWeight(UIDevice.isIPAD ? .heavy : .semibold)
         .frame(width: buttonDim, height: buttonDim)
         .foregroundStyle(fgColor)
         .background(bgColor)
