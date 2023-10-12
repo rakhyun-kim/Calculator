@@ -13,6 +13,7 @@ struct ButtonView: View {
     
     let fgColor: Color
     let bgColor: Color
+    let width: CGFloat
     
     var systemImage: String? {
         let value = calcButton.rawValue
@@ -22,13 +23,17 @@ struct ButtonView: View {
         let value = calcButton.rawValue
         return value.contains("IMG") ? nil : value
     }
-    
-    let buttonDim: CGFloat = UIScreen.main.bounds.width / 5
+    var buttonDim: CGFloat { UIDevice.isIPAD ? width  / 6 :
+        width / 5 }
     
     var body: some View {
         ZStack {
-            Text(text ?? "")
-            Image(systemName: systemImage ?? "")
+            if let text = text {
+                Text(text)
+            }
+            if let systemImage = systemImage {
+                Image(systemName: systemImage)
+            }
         }
         .font(UIDevice.isIPAD ? .largeTitle : .title2)
         .fontWeight(UIDevice.isIPAD ? .heavy : .semibold)
@@ -43,9 +48,15 @@ struct ButtonView: View {
 
 #Preview {
     VStack {
-        ButtonView(calcButton: .negative, fgColor: foregroundDigitsColor, bgColor: buttonBackgroundColor)
-        ButtonView(calcButton: .undo, fgColor: foregroundTopButtonsColor, bgColor: buttonBackgroundColor)
-        ButtonView(calcButton: .percent, fgColor: foregroundRightButtonsColor, bgColor: buttonBackgroundColor)
+        ButtonView(
+            calcButton: .negative, fgColor: foregroundDigitsColor, bgColor: buttonBackgroundColor,
+            width:375)
+        ButtonView(
+            calcButton: .undo, fgColor: foregroundTopButtonsColor, bgColor: buttonBackgroundColor,
+            width:375)
+        ButtonView(
+            calcButton: .percent, fgColor: foregroundRightButtonsColor, bgColor: buttonBackgroundColor,
+            width:375)
     }
     
 }
